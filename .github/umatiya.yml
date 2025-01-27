@@ -1,0 +1,27 @@
+name: "sample react CI pipeline / workflow"
+
+on:
+    push:
+        branches:
+            - main
+            - master
+
+jobs: 
+    bulid-and-test:     
+           run-on: ubuntu-latest
+
+           steps:
+            - name: "setup nod JS"
+              uses: actions/setup-node@v4
+            with:
+                node-version: '21'
+                
+                - Name: "check node version"
+                     run: node --version
+
+                  - Name:  "clone the repository"
+                  uses: actions/checkout@v2
+
+                  - name: "install dependencies"
+                    run: npm install
+                    
