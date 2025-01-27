@@ -5,8 +5,7 @@ on:
    branches:
         - main
         - master
-Jobs:
- build-and-test:
+Jobs:  build-and-test:
      runs- on: ubantu-lstest
 
     steps:
