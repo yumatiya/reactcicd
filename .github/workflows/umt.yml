@@ -34,10 +34,10 @@ jobs:
             - name: "run build"
               run: npm run build 
 
-            - name: "upload product-ready bulid files"
+            
+            - name: "upload product-ready build files"
               uses: actions/upload-artifact@v4
-            - with:  
+              with:  
                 name: build
                 path: /dist
                   
-              
